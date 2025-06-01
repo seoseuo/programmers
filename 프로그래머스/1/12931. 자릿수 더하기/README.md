@@ -57,4 +57,29 @@
 9 + 8 + 7 = 24이므로 24를 return 하면 됩니다.</p>
 
 
+**우수 답**
+``` java
+import java.util.*;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = 0;
+
+        while(true){
+            answer+=n%10;
+            if(n<10)
+                break;
+
+            n=n/10;
+        }
+
+        // [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+        System.out.println("Hello Java");
+
+        return answer;
+    }
+}
+```
+
+
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
